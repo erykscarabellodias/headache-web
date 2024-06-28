@@ -1,5 +1,5 @@
 <template>
-  <el-page-header title="Voltar" @back="onBack">
+  <el-page-header style="color: #ccc" title="Voltar" @back="onBack">
     <template #content>
       <span class="text-large font-600 mr-3">{{ this.title }}</span>
     </template>
