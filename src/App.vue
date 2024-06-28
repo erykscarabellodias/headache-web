@@ -21,6 +21,10 @@
 </template>
 
 <style>
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,8 +45,4 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
-
-@import '~bootstrap/dist/css/bootstrap.css';
-
-@import '~element-plus/dist/index.css'
 </style>
