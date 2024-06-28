@@ -8,6 +8,10 @@
       <template #title>Motivos</template>
 
       <el-menu-item>
+        <router-link to="/motivos">Listar</router-link>
+      </el-menu-item>
+
+      <el-menu-item>
         <router-link to="/motivos/cadastrar">Cadastrar</router-link>
       </el-menu-item>
     </el-sub-menu>

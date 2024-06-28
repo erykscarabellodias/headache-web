@@ -6,6 +6,11 @@ const routes = [
     name: 'cadastrar-motivo',
     component: () => import(/* webpackChunkName: "about" */ '@/views/Motivos/CadastrarView.vue')
   },
+  {
+    path: '/motivos',
+    name: 'motivos',
+    component: () => import('@/views/Motivos/ListarView.vue')
+  }
 
 ]
 

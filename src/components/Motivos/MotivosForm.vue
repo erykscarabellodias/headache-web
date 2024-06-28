@@ -19,6 +19,7 @@
 <script>
 
 import axios from 'axios';
+import { ElMessage } from 'element-plus';
 
 export default {
   data() {
@@ -30,14 +31,20 @@ export default {
   methods: {
     async handleSubmit() {
       if (!this.motivo) {
+        ElMessage({
+          showClose: true,
+          message: 'O motivo não pode ser vazio',
+          type: 'error'
+        });
+
         return;
       }
 
-
-
       await axios.post(`${process.env.VUE_APP_API_URL}/motivos`, {
-        motivo: this.motivo
+        descricao: this.motivo
       })
+
+      this.$router.push('/motivos')
     }
   }
 }

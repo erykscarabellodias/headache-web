@@ -1,6 +1,8 @@
 <template>
   <div class="container mt-3">
-    <h1>Cadastrar novo motivo</h1>
+    <MotivosHeader title="Cadastrar novo motivo" />
+
+    <br>
 
     <MotivosForm />
   </div>
@@ -8,9 +10,12 @@
 
 <script>
 import MotivosForm from '@/components/Motivos/MotivosForm.vue'
+import MotivosHeader from '@/components/Motivos/MotivosHeader.vue'
+
 export default {
   components: {
-    MotivosForm
+    MotivosForm,
+    MotivosHeader
   }
 }
 </script>
