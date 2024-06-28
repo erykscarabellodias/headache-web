@@ -1,9 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <el-menu class="el-menu-demo" mode="horizontal">
+    <el-menu-item index="1">
+      <template #title><router-link to="/">Home</router-link></template>
+    </el-menu-item>
+
+    <el-sub-menu index="2">
+      <template #title>Motivos</template>
+
+      <el-menu-item>
+        <router-link to="/motivos/cadastrar">Cadastrar</router-link>
+      </el-menu-item>
+    </el-sub-menu>
+  </el-menu>
+
+  <router-view />
 </template>
 
 <style>
@@ -27,4 +37,8 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+@import '~bootstrap/dist/css/bootstrap.css';
+
+@import '~element-plus/dist/index.css'
 </style>
