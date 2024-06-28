@@ -1,10 +1,8 @@
 <template>
-  <div class="mt-3">
-    <el-table :data="motivos" stripe>
-      <el-table-column prop="id" label="ID" />
-      <el-table-column prop="descricao" label="Descrição" />
-    </el-table>
-  </div>
+  <el-table :data="motivos" stripe>
+    <el-table-column prop="id" label="ID" />
+    <el-table-column prop="descricao" label="Descrição" />
+  </el-table>
 </template>
 
 <script>

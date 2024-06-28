@@ -1,29 +1,21 @@
 <template>
-  <el-menu class="el-menu-demo" mode="horizontal">
-    <el-menu-item index="1">
-      <template #title><router-link to="/">Home</router-link></template>
-    </el-menu-item>
-
-    <el-sub-menu index="2">
-      <template #title>Motivos</template>
-
-      <el-menu-item>
-        <router-link to="/motivos">Listar</router-link>
-      </el-menu-item>
-
-      <el-menu-item>
-        <router-link to="/motivos/cadastrar">Cadastrar</router-link>
-      </el-menu-item>
-    </el-sub-menu>
-  </el-menu>
+  <AppHeader />
 
   <router-view />
 </template>
 
+<script>
+import AppHeader from '@/components/Shared/AppHeader.vue';
+
+export default {
+  components: {
+    AppHeader
+  }
+}
+</script>
+
 <style>
 @import '~bootstrap/dist/css/bootstrap.css';
-
-
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
